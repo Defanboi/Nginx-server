@@ -1,0 +1,18 @@
+
+version: '3.5'
+services:
+   wev-server:
+      image: nginx:1.26.1
+      container_name: mynginx
+      volumes: 
+        - '/opt/web/html:/var/www/html'
+        - '/opt/web/pics:/var/www/pictures'
+      ports:
+        - '80:80'
+        - '443:443'
+      restart: unless-stopped
+networks:
+  default:
+    driver: bridge
+    name: webnet
+

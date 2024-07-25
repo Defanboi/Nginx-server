@@ -3,7 +3,7 @@ version: '3.5'
 services:
    wev-server:
       image: nginx:1.26.1
-      container_name: mynginx
+      container_name: nginx
       volumes: 
         - ./static:/usr/share/nginx/html
       ports:

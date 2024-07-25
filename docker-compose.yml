@@ -1,7 +1,7 @@
 
 version: '3.5'
 services:
-   wev-server:
+   web-server:
       image: nginx:1.26.1
       container_name: nginx
       volumes: 

@@ -5,7 +5,7 @@ services:
       image: nginx:1.26.1
       container_name: mynginx
       volumes: 
-        - ./static:/var/www/html
+        - ./static:/usr/share/nginx/html
       ports:
         - '80:80'
         - '443:443'
